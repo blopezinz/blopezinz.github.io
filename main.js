@@ -3,7 +3,7 @@ let player = 0;
 let pointPlayer1 = 0;
 let pointPlayer2 = 0;
 let point = document.getElementById("point");
-let win = [
+const win = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
@@ -29,9 +29,9 @@ function handleClick (value) {
     let itemChange = document.getElementById(value);
     if(item === "-"){
         if(player === 0) {
-            itemChange.innerHTML = "X";
-            ChosseWinner("X");
+            itemChange.innerHTML = "X";            
             player = 1;
+            ChosseWinner("X");
         } else if(player === 1){
             itemChange.innerHTML = "O";
             player = 0;
@@ -58,31 +58,32 @@ function End () {
     }
 }
 
-function ChosseWinner (player) {
-    let counter = 0;
-    console.log(player);
+function ChosseWinner () {
+    let counterX = 0;
+    let counterO = 0;
     for(i = 0; i < win.length; i++) {
         for(p = 0; p < win[i].length; p++){
             let item = document.getElementById(win[i][p]).innerHTML;
-            if( item === player){
-                
-                counter++;
-            }else {
-                console.log(item);
-                counter = 0;
+            if(item === "X"){
+                counterX++;
+            } else if(item === "O"){
+                counterO++;
             }
+            console.log("------------------------------------");
+        }
+        if (counterX < 3 && counterO < 3){
+            counterX = 0;
+            counterO = 0;
+        }
 
-            if(counter === 3){
-                alert("Gano el Player " + player)
-                if(player === "X"){
-                    pointPlayer1++;
-                    point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
-                }else  if(player === "O"){
-                    pointPlayer2++;
-                    point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
-                }
-            }
-
+        if(counterX === 3){
+            alert("Gano player 1");
+            counterO = 0;
+        }else if(counterO === 3){
+            alert("Gano player 2");
+            counterX = 0;
         }
     }
+
+    
 }

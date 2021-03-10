@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="source/css/style.css">
-    <link rel="shortcut icon" href="source/img/profile/favicon.svg" type="image/x-icon" sizes="64x64">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <title>blopezinz</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="header">
-        <div class="header__nav">
-            <h3 class="header__title">blopezinz</h3>
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="">Myself</a></li>
-                <li class="header__item"><a class="header__link" href="">My Skills</a></li>
-                <li class="header__item"><a class="header__link" href="">Experience</a></li>
-                <li class="header__item"><a class="header__link" href="">Contact</a></li>
-            </ul>
-        </div>
-    </div>
+    
     <div class="content">
-        <dv class="panel" id="panel">
-            hola <br>
-            <br><br><br><br><br><br><br><br><br>
-            hola
-        </dv>
-        <br><br><br><br><br>
-        <button onclick="panel()">Hola</button>
+        <div class="point" id="point">
+        
+        </div>        
+        <div class="table">
+            <div class="row">
+                <a class="item" id="1" href="#" onclick="handleClick(1)">-</a>
+                <a class="item" id="2" href="#" onclick="handleClick(2)">-</a>
+                <a class="item" id="3" href="#" onclick="handleClick(3)">-</a>
+            </div>
+            <div class="row">
+                <a class="item" id="4" href="#" onclick="handleClick(4)">-</a>
+                <a class="item" id="5" href="#" onclick="handleClick(5)">-</a>
+                <a class="item" id="6" href="#" onclick="handleClick(6)">-</a>
+            </div>
+            <div class="row">
+                <a class="item" id="7" href="#" onclick="handleClick(7)">-</a>
+                <a class="item" id="8" href="#" onclick="handleClick(8)">-</a>
+                <a class="item" id="9" href="#" onclick="handleClick(9)">-</a>
+            </div>
+        </div>      
+        <div class="button">
+            <button class="btn" onclick="start()">Start</button>
+        </div>
+        
     </div>
-    <div class="footer">
-        Developed and designed by <a class="footer__mail" href="mailto:b.lopezinzulza@gmail.com">Bastián López</a>. ©2021. All rights reserved.
-    </div>
-    <script src="source/js/index.js"></script>
+    
 </body>
+<script src="main.js"></script>
 </html>

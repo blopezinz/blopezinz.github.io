@@ -20,7 +20,7 @@ body {
 
 .point {
     background-color: #c77dff;
-    width: 600px;
+    width: 500px;
     height: 100px;
     padding: 10px;
     border: 2px solid #3c096c;
@@ -30,8 +30,8 @@ body {
     display: table;
     background-color: #7b2cbf;
     border: 2px solid #3c096c;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 }
 
 .row{
@@ -39,22 +39,22 @@ body {
 }
 
 .item {
-    margin: 22px;
+    margin: 30px;
     display: inline-block;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: #f72585;
     font-size: 50px;
-    padding: 48px;
+    padding: 15px;
     text-decoration: none;
     border-radius: 20px;
 }
 
 .button {
-    width: 600px;
+    width: 500px;
     text-align: right;
-    padding: 20px;
+    padding: 10px;
     border: 2px solid #3c096c;
     background-color: #3c096c;
 }

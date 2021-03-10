@@ -47,6 +47,18 @@
         height: 1200px;
     }
 
+    .panel {
+        position: absolute;
+        background: black;
+        width: 0;
+        height: 0;
+        right: 100px;
+        top: 100px;
+        z-index: 100;
+        transition: 1s all;
+        border-radius: 20px;
+        display: none;
+    }
     /* Footer Style */
 }
 

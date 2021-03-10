@@ -1,0 +1,75 @@
+/* General Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* Desktop Style*/
+
+@media only screen and (min-width: 1024px) {
+
+    /* Nav Style */
+
+    .header__nav {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+        background: gray;
+        padding: 20px 30px;
+    }
+
+    .header__title {
+        float: left;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
+
+    .header__list {
+        float: right;
+        list-style-type: none;
+        vertical-align: middle;
+    }
+
+    .header__item {
+        display: inline-block;
+    }
+
+    .header__link {
+        text-decoration: none;
+    }
+
+    /* Content Style */
+
+    .content {
+        height: 1200px;
+    }
+
+    /* Footer Style */
+}
+
+/* Tablet Style*/
+
+@media only screen and (max-width: 1024px) {
+    /* Nav Style */
+
+
+    /* Content Style */
+
+
+    /* Footer Style */
+}
+
+/* Phone Style */
+
+@media only screen and (max-width: 768px) {
+    /* Nav Style */
+
+
+    /* Content Style */
+
+
+    /* Footer Style */
+}

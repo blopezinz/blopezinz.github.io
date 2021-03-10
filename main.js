@@ -42,19 +42,20 @@ function handleClick (value) {
 }
 
 function End () {
-    endGame = 0;
+    endGame;
 
     for(i = 1; i <= 9 ; i++) {
         status = document.getElementById(i).innerHTML
         if(status != "-"){
-            endGame = 2;
+            endGame = 1;
         }else {
             endGame = 0;
         }
     }
 
-    if(endGame === 2){
+    if(endGame === 1){
         alert("Empate!!")
+        endGame = 0;
     }
 }
 
@@ -79,9 +80,15 @@ function ChosseWinner () {
         if(counterX === 3){
             alert("Gano player 1");
             counterO = 0;
+            counterX = 0;
+            pointPlayer1++;
+            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
         }else if(counterO === 3){
             alert("Gano player 2");
             counterX = 0;
+            counterO = 0;
+            pointPlayer2++;
+            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
         }
     }
 

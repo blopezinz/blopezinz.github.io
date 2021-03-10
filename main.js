@@ -77,7 +77,7 @@ function ChosseWinner (player) {
                 if(player === "X"){
                     pointPlayer1++;
                     point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
-                }else  if(player === "Y"){
+                }else  if(player === "O"){
                     pointPlayer2++;
                     point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
                 }

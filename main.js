@@ -70,7 +70,6 @@ function ChosseWinner () {
             } else if(item === "O"){
                 counterO++;
             }
-            console.log("------------------------------------");
         }
         if (counterX < 3 && counterO < 3){
             counterX = 0;

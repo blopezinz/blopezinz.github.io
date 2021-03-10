@@ -8,7 +8,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #514865;
+    background-color: #414141;
 }
 
 .content {
@@ -16,25 +16,25 @@ body {
     vertical-align: middle;
     display: grid;
     justify-content: center;
-    border-radius: 0% 0% 20px 20px;
 }
 
 .point {
-    background-color: #485c65;
+    background-color: #056571;
     width: 500px;
     height: 100px;
     padding: 15px;
-    border: 2px solid #edf2f4;
-    color: #edf2f4;
-    font-size: 25px;
-    border-radius: 0px 50px 0px 0px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .table {
     display: table;
     margin-top: 1px;
-    background-color: #485c65;
-    border: 2px solid #edf2f4;
+    background-color: #056571;
+    border: 2px solid #ffffff;
     width: 500px;
     height: 500px;
 }
@@ -49,13 +49,15 @@ body {
     text-align: center;
     width: 100px;
     height: 100px;
-    background-color: #655148;
-    border: 1px solid #edf2f4;
-    font-size: 50px;
-    padding: 15px;
+    background-color: #ff6a5c;
+    border: 1px solid #ffffff;
+    font-size: 35px;
+    padding: 33px;
     text-decoration: none;
     border-radius: 20px;
-    color:#edf2f4;
+    color:#ffffff;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 10px 10px 5px #414141;
 }
 
 .button {
@@ -63,14 +65,20 @@ body {
     width: 500px;
     text-align: right;
     padding: 10px;
-    border: 2px solid #edf2f4;
-    background-color: #485c65;
-    border-radius: 0px 0px 0px 50px;
+    border: 2px solid #ffffff;
+    background-color: #056571;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
     display: inline-block;
     width: 100px;
     border-radius: 6px;
     padding: 5px;
+    background-color: #1fb58f;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 3px 3px 1px #414141;
 }

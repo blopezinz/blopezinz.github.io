@@ -14,7 +14,7 @@ const win = [
     [3, 5, 7]
 ]
 
-point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
+point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br><br>Puntos Player O: " + pointPlayer2;
 
 function start() {
     for(i = 1; i <= 9 ; i++) {
@@ -81,13 +81,13 @@ function ChosseWinner () {
             counterO = 0;
             counterX = 0;
             pointPlayer1++;
-            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
+            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br><br>Puntos Player O: " + pointPlayer2;
         }else if(counterO === 3){
             alert("Gano player 2");
             counterX = 0;
             counterO = 0;
             pointPlayer2++;
-            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br>Puntos Player O: " + pointPlayer2;
+            point.innerHTML = "Puntos Player X: " + pointPlayer1 + "<br><br>Puntos Player O: " + pointPlayer2;
         }
     }
 

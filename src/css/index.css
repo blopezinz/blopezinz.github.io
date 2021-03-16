@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    transition: .1s all ease-in-out;
+    text-align: center;
+}
+
+.nav--static {
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+}
+
+.nav--scroll {
+    position: fixed;
+    padding: 10px;
+    background-color: #6a00f4;
+    border-bottom: #0000001c 2px solid;
+}
+
+.nav--title {
+    display: inline-block;
+    font-family: 'Dancing Script';
+    color: #fff;
+    margin-right: 25%;
+}
+
+.nav--list {
+    display: inline-block;
+}
+
+.nav--item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav--link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav--link:hover {
+    color: #ffd500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffd500;
+}
+
+.content {
+    width: 100%;
+}
+
+.content--about {
+    background-color: #6a00f4; 
+    width: 100%;
+    height: 800px;
+    border-radius: 0% 0% 20% 20%;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.content--img_p {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.content--description {
+    color: #fff;
+    font-size: 35px;
+}
+
+.content--img_s {
+    margin-top: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #303030;
+    transition: .3s all ease-in-out;
+}
+
+.content--img_s:hover {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.content--skill {
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid #0000001c;
+}
+
+.content--portfolio {
+    width: 100%;
+    height: 500px;
+    border-bottom: 1px solid #0000001c;
+}
+
+.content--contact {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+
+.content--title {
+    margin-top: 25px;
+    color: #6a00f4;
+    font-size: 40px;
+    text-align: center;
+}
+
+.content--contact__form {
+    width: 600px;
+    border: 2px solid #6a00f4;
+    border-radius: 20px;    
+    margin: 15px auto;
+}
+
+.content--input {
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 2px solid #6a00f4;
+    padding: 20px;
+    width: 80%;
+}
+
+.content--btn {
+    background-color: #6a00f4;
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.footer {
+    width: 100%;
+    padding:50px;
+    text-align: center;
+    background-color: #6a00f4; 
+    color: #fff;
+    font-size: 20px;
+}

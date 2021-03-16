@@ -4,41 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="shortcut icon" href="src/tic-tac-toe.svg" type="image/x-icon">
-    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">    
+    <title>blopezinz</title>
 </head>
 <body>
-    
-    <div class="content">
-        <div class="point" id="point">
-        
-        </div>        
-        <div class="table">
-            <div class="row">
-                <a class="item" id="1" href="#" onclick="handleClick(1)">-</a>
-                <a class="item" id="2" href="#" onclick="handleClick(2)">-</a>
-                <a class="item" id="3" href="#" onclick="handleClick(3)">-</a>
-            </div>
-            <div class="row">
-                <a class="item" id="4" href="#" onclick="handleClick(4)">-</a>
-                <a class="item" id="5" href="#" onclick="handleClick(5)">-</a>
-                <a class="item" id="6" href="#" onclick="handleClick(6)">-</a>
-            </div>
-            <div class="row">
-                <a class="item" id="7" href="#" onclick="handleClick(7)">-</a>
-                <a class="item" id="8" href="#" onclick="handleClick(8)">-</a>
-                <a class="item" id="9" href="#" onclick="handleClick(9)">-</a>
-            </div>
-        </div>      
-        <div class="button">
-            <button class="btn" onclick="start()">Restart</button>
-        </div>
-        
+    <div id="nav" class="nav nav--static">
+        <h1 class="nav--title">blopezinz</h1>
+        <ul class="nav--list">
+            <li class="nav--item"><a href="" class="nav--link">Home</a></li>
+            <li class="nav--item"><a href="" class="nav--link">Skills</a></li>
+            <li class="nav--item"><a href="" class="nav--link">Portfolio</a></li>
+            <li class="nav--item"><a href="" class="nav--link">Contact</a></li>
+        </ul>
     </div>
-    
+    <div class="content">
+        <div class="content--about">
+            <img class="content--img_p" src="src/img/profile.jpg" alt="" srcset="">
+            <div class="content--description">
+                Hello!.  I´m Bastián López.  I´m 23 years old. <br>
+                I´m a web developer.
+                <div class="content--social">
+                    <a href="" class="content--link"><img src="src/img/facebook.svg" alt="" srcset="" class="content--img_s"></a>
+                    <a href="" class="content--link"><img src="src/img/instagram.svg" alt="" class="content--img_s"></a>
+                    <a href="" class="content--link"><img src="src/img/github.svg" alt="" class="content--img_s"></a>
+                    <a href="" class="content--link"><img src="src/img/linkedin.svg" alt="" class="content--img_s"></a>
+                    <a href="" class="content--link"><img src="src/img/twitter.svg" alt="" class="content--img_s"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content--skill">
+            <h1 class="content--title">My Skills</h1>
+        </div>
+        <div class="content--portfolio">
+            <h1 class="content--title">My Portfolio</h1>
+        </div>
+        <div class="content--contact">
+            <h1 class="content--title">Contact</h1>
+            <form class="content--contact__form" action="" method="post">
+                <input class="content--input" type="text" placeholder="Name">
+                <input class="content--input" type="email" placeholder="Email">
+                <textarea class="content--input" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="content--btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        Designed and developed by Bastian Lopez. Copyright©, all rights reserved.
+    </div>
 </body>
-<script src="src/main.js"></script>
+<script src="src/js/index.js"></script>
 </html>

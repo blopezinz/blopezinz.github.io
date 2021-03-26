@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">    
     <title>blopezinz</title>
 </head>
-<body>
+<body id="body">
     <div id="nav" class="nav nav--static">
         <h1 class="nav--title">blopezinz</h1>
         <ul class="nav--list">
@@ -17,6 +17,10 @@
             <li class="nav--item"><a href="" class="nav--link">Skills</a></li>
             <li class="nav--item"><a href="" class="nav--link">Portfolio</a></li>
             <li class="nav--item"><a href="" class="nav--link">Contact</a></li>
+        </ul>
+        <ul class="nav--list">
+            <li id="dark" class="nav--item "><a onclick="changeDark(0)" class=""><img class="dark-mode " src="src/img/dark_mode/dark.svg" alt="" srcset=""></a></li>
+            <li id="light" class="nav--item dark-mode__disabled"><a onclick="changeDark(1)" class=""><img class="dark-mode " src="src/img/dark_mode/light.svg" alt="" srcset=""></a></li>
         </ul>
     </div>
     <div class="content">

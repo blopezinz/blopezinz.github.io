@@ -57,12 +57,10 @@ body {
     margin: auto 50px;
     width: 20px;
     height: 20px;
-    transition: 1s all ease-in-out;
 }
 
 .dark-mode__disabled {
     display: none;
-    transition: 1s all ease-in-out;
 }
 .nav--link:hover {
     color: #ffd500;
@@ -102,7 +100,7 @@ body {
     height: 50px;
     border-radius: 7px;
     padding: 10px;
-    background-color: #303030;
+    background-color: #424242;
     transition: .3s all ease-in-out;
 }
 
@@ -164,10 +162,10 @@ body {
 .content--title {
     margin-top: 25px;
     margin-bottom: 25px;
-    color: #fff;
     font-size: 40px;
     text-align: center;
     border-bottom: 1px solid #6a00f4;
+    transition: 2s all ease-in-out;
 }
 
 .content--contact__form {

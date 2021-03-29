@@ -41,6 +41,10 @@ body {
     display: inline-block;
 }
 
+.nav--list__size {
+    width: 200px;
+}
+
 .nav--item {
     display: inline-block;
     margin-right: 20px;
@@ -52,11 +56,23 @@ body {
     font-size: 20px;
 }
 
+.nav--dark {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav--dark__1 {
+    text-decoration: none;
+    color: #ffd500;
+    font-size: 20px;
+}
 
 .dark-mode {
-    margin: auto 50px;
-    width: 20px;
-    height: 20px;
+    margin: 0 10px 0 50px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
 }
 
 .dark-mode__disabled {
@@ -75,7 +91,7 @@ body {
 .content--about {
     background-color: #6a00f4; 
     width: 100%;
-    height: 750px;
+    height: 850px;
     border-radius: 0% 0% 20% 20%;
     padding-top: 150px;
     text-align: center;
@@ -107,6 +123,7 @@ body {
 .content--img_s:hover {
     margin-top: 30px;
     margin-bottom: 10px;
+    box-shadow: 0px 10px 1px #42424241;
 }
 
 .content--skill {
